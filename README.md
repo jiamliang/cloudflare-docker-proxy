@@ -34,10 +34,14 @@
   - host your domain DNS on cloudflare
   - add all domains (which config in _step 4.2_. eg: `docker.yourdomain.com`, `quay.yourdomain.com` etc.) to **Custom Domains** of the worker you have deployed. 
 
+
+  *Attention： Click **Triggers** in the _worker page_ to show **Custom Domains** and **Routes** info.
+
+
 ## Config Docker mirrors
 1. modify `/etc/docker/daemon.json`, add **registry-mirrors** as follow:
    - if you choose **4.1 use cloudflare worker host**.   
-     Change the following **url** to your **actually url** (which you can find in **Routes** of your worker).
+     Change the following **url** to your **actually url** (which you can find in **Preview** or **Routes** of your worker).
     ```javascript
     {
         "registry-mirrors": ["https://<workername>.<username>.workers.dev"]
