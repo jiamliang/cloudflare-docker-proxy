@@ -9,11 +9,11 @@ Due to the current instability, this project is not recommended for production u
 We will provide updates as soon as more information becomes available.
 
 
-![deploy](https://github.com/ciiiii/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
+![deploy](https://github.com/jiamliang/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ciiiii/cloudflare-docker-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/jiamliang/cloudflare-docker-proxy)
 
-> If you're looking for proxy for helm, maybe you can try [cloudflare-helm-proxy](https://github.com/ciiiii/cloudflare-helm-proxy).
+> If you're looking for proxy for helm, maybe you can try [cloudflare-helm-proxy](https://github.com/jiamliang/cloudflare-helm-proxy).
 
 ## Deploy
 
@@ -21,7 +21,7 @@ We will provide updates as soon as more information becomes available.
 2. follow the instructions to fork and deploy
 3. update routes as you requirement
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ciiiii/cloudflare-docker-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/jiamliang/cloudflare-docker-proxy)
 
 ## Routes configuration tutorial
 
@@ -39,11 +39,11 @@ We will provide updates as soon as more information becomes available.
    - add more records and modify the config as you need
    ```javascript
    const routes = {
-     "docker.libcuda.so": "https://registry-1.docker.io",
-     "quay.libcuda.so": "https://quay.io",
-     "gcr.libcuda.so": "https://k8s.gcr.io",
-     "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-     "ghcr.libcuda.so": "https://ghcr.io",
+     "docker.example.com": "https://registry-1.docker.io",
+     "quay.example.com": "https://quay.io",
+     "gcr.example.com": "https://k8s.gcr.io",
+     "k8s-gcr.example.com": "https://k8s.gcr.io",
+     "ghcr.example.com": "https://ghcr.io",
    };
    ```
 
